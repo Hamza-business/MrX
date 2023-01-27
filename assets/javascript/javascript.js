@@ -192,3 +192,83 @@ function navshow(){
     }
 }
 
+
+
+
+let TileFilter = "";
+let yearFilter = "";
+let stageFilter = "";
+
+function setTtile(val){
+    TileFilter = val;
+    searchFilter();
+}
+function setYear(val){
+    yearFilter = val;
+    searchFilter();
+}
+function setMr(val){
+    stageFilter = val;
+    searchFilter();
+}
+function getAllcourses(clNm){
+    let allCourses = document.querySelectorAll(`.${clNm}`)
+    return [...allCourses]
+}
+
+function searchFilter(){
+    let courses = getAllcourses("card");
+    courses.forEach((ele)=>{
+        ele.classList.remove("filtered")
+        if(ele.querySelector(".title").textContent.includes(TileFilter)){
+            if(ele.querySelector(".year").textContent.includes(yearFilter)){
+                if(ele.querySelector(".stage").textContent.includes(stageFilter)){
+                    ele.classList.add("filtered")
+                }
+            }
+        }
+    })
+    makeCardPages();
+}
+
+function makeCardPages(){
+    let cards = getAllcourses("filtered");
+    let cardNum = 8;
+    let pagNmbr = Math.ceil(cards.length / cardNum);
+    let pcparent = document.querySelector(".pagesCount");
+    pcparent.innerHTML = "";
+
+    for(let i=0; i<pagNmbr; i++){
+        let newP = document.createElement("p")
+        newP.textContent = i+1;
+
+        let start = i*cardNum;
+        let end = ((i+1)*cardNum) - 1;
+
+        newP.addEventListener('click',()=>{
+            let allP = [...document.querySelectorAll(".pagesCount p")];
+            allP.forEach((ele)=>{
+                ele.classList.remove("active");
+            });
+
+            newP.classList.add("active");
+            
+            cards.forEach((card,i)=>{
+                if(start <= i && i <= end){
+                    card.classList.add("active");
+                }
+                else card.classList.remove("active");
+            })
+        })
+
+        pcparent.append(newP)
+    }
+
+    try{
+        pcparent.firstElementChild.click();
+        document.querySelector(".ifnot").style.display = "none";
+    }catch(e){
+        document.querySelector(".ifnot").style.display = "block";
+    }
+    
+}

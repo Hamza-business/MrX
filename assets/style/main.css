@@ -1039,3 +1039,141 @@ video {
         display: none;
     } 
 } */
+
+
+
+
+
+
+.hero-Lect {
+    background-size: 130%;
+}
+.hero-Lect .hero-body {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 3rem;
+}
+.has-text-third{
+    color: #01afaf
+}
+.panel{
+    margin-bottom: 0 !important;
+    margin-top: 60px;
+    box-shadow: 0 0.4em 0.8em -0.125em rgba(10, 100, 100, 0.3), 0 0px 0 1px rgba(10, 100, 100, 0.04);
+}
+.panel .panel-block {
+    background: #ededed;
+    position: relative;
+}
+.Lects .gridSys{
+    margin-top: 0;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 2fr)) !important;
+}
+.Lects .Moqtarh {
+    margin-top: 50px;
+}
+.alects .card{
+    display: none;
+}
+.alects .LastLec{
+    padding-bottom: 30px;
+}
+.alects .card.filtered.active{
+    display: block;
+}
+.alects .card .subtitle.is-4{
+    margin-bottom: 10px;
+}
+.alects .card .title.is-5{
+    margin-bottom: 30px;
+}
+.alects .card .tag.is-primary {
+  background-color: var(--third-color) !important;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 770px), print{
+    .hero-Lect {
+        background-size: 170%;
+    }
+}
+@media screen and (max-width: 400px), print{
+    .hero-Lect {
+        background-size: 300%;
+    }
+}
+.panel-heading{
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: var(--second-color);
+}
+.panel .select {
+    margin-right: 10px;
+}
+input::placeholder{
+    color: #000 !important
+}
+.filtering{
+    padding-right: 26px;
+    margin-left: -4px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: var(--second-color);
+}
+.seBoxes{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    background: #ededed;
+    top: 46px;
+    z-index: 200;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0.4em 0.8em -0.125em rgba(10, 100, 100, 0.3), 0 0px 0 1px rgba(10, 100, 100, 0.04);
+    display: none;
+    padding: 14px 12px 4px 4px;
+}
+.seBoxes label{
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.seBoxes label input{
+    margin-right: 0px !important;
+}
+.seBoxes label input::before {
+    height: 0.7em;
+    width: 0.7em;
+    border-radius: 2px;
+}
+.b1.active{
+    display: block;
+    left: 14px;
+}
+.b2.active{
+    display: block;
+    left: 166px;
+}
+
+
+.pagesCount {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.pagesCount p {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    border-radius: 5px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.pagesCount p.active {
+    opacity: 0.98;
+    background-color: var(--fourth-color);
+}

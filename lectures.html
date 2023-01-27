@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpeg">
+        <title>منصة التميز التعليمية</title>
+        <link rel='stylesheet' href='/assets/style/bulma-rtl.min.css'>
+        <link rel='stylesheet' href='/assets/style/main.css'>
+        <link rel="stylesheet" href="/assets/style/all.min.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navsect">
+        </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="navBar">
+        </nav>
+        
+        <section class="about hero hero-Lect block bordered">
+            <div class="hero-body nomarg">
+                <div class="has-text-centered">
+                    <h1 class="title is-1 has-text is-red">Lectures</h1>
+                    <h3 class="title is-5 has-text is-red">Watch > Learn > Succed</h3>
+                    <div class="has-text-centered">
+                        <a href="/" class="has-text-white"> Home </a> <span class="has-text-white">/</span> <span class="has-text-third"> Lectures </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <div class="container">
+            <article class="panel">
+                <p class="panel-heading is-bg-red">البحث والتصنيف</p>
+                <div class="panel-block">
+                  <p class="control has-icons-left">
+                    <input class="input" type="text" placeholder="البحث باستخدام كلمات" onchange="setTtile(this.value)">
+                    <span class="icon is-left"><i class="fas fa-search is-red"></i></span>
+                  </p>
+
+                  <div class="select">
+                    <select>
+                        <option selected disabled hidden onclick="setYear('')">الصف</option>
+                        <option selected onclick="setYear('')">الكل</option>
+                        <option onclick="setYear('الاول ثانوي')">الاول ثانوي</option>
+                        <option onclick="setYear('الثاني ثانوي')">الثاني ثالنوي</option>
+                        <option onclick="setYear('الثالث ثانوي')">الثالث ثالنوي</option>
+                    </select>
+                  </div>
+
+                  <div class="select">
+                    <select>
+                        <option selected disabled hidden onclick="setMr('')">الاستاذ</option>
+                        <option selected onclick="setMr('')">الكل</option>
+                        <option onclick="setMr('فيزياء')">مستر اكس</option>
+                        <option onclick="setMr('رياضيات')">مستر اكس برضو</option>
+                    </select>
+                  </div>
+
+                </div>
+            </article>        
+        </div>
+    
+    
+
+        <div class="container">
+            <section class="Cards1 block Lects alects">
+                <section class="Moqtarh features LastLec">
+                    <div class="block">
+                        <div class="gridSys">
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">رياضيات</p>
+                                    <p class="subtitle is-6">الاول ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الاول ثانوي</span>
+                                    <span class="tag stage is-primary">رياضيات</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+                            
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">رياضيات</p>
+                                    <p class="subtitle is-6">الثاني ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الثاني ثانوي</span>
+                                    <span class="tag stage is-primary">رياضيات</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">رياضيات</p>
+                                    <p class="subtitle is-6">الثالث ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الثالث ثانوي</span>
+                                    <span class="tag stage is-primary">رياضيات</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+    
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">فيزياء</p>
+                                    <p class="subtitle is-6">الاول ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الاول ثانوي</span>
+                                    <span class="tag stage is-primary">فيزياء</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+                            
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">فيزياء</p>
+                                    <p class="subtitle is-6">الثاني ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الثاني ثانوي</span>
+                                    <span class="tag stage is-primary">فيزياء</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+
+                            <div class="card filtered">
+                                <div class="card-image">
+                                    <img src="https://via.placeholder.com/500x300 "alt="image">
+                                </div>
+                                <div class="card-content">
+                                    <p class="title is-5">مقدمة في الجبر</p>
+                                    <p class="subtitle is-6">مستر اكس</p>
+                                    <p class="subtitle is-6">فيزياء</p>
+                                    <p class="subtitle is-6">الثالث ثانوي</p>
+                                    <p class="subtitle is-6">5 ساعات فيديو</p>
+                                    <p class="subtitle is-4">50 جنيه</p>
+                                    <span class="tag year is-primary">الثالث ثانوي</span>
+                                    <span class="tag stage is-primary">فيزياء</span>
+                                </div>
+                                <a href="#" class="card-footer-item button is-bg-red is-fullwidth buy">تفاصيل المحاضرة</a>
+                            </div>
+
+                        </div>        
+                    </div>
+                    <p class="title is-4 has-text-centered ifnot" style="display: none;">No Courses Found</p>
+                </section>
+            </section>
+        </div>
+        
+
+        <div class="pagesCount">
+        </div>
+
+
+        <footer class="footer">
+        </footer>
+    
+        <div class="licens">  
+        </div>
+
+    </body>
+</html>
+
+<script src='/assets/javascript/javascript.js'></script>
+<script src="/assets/javascript/navFooterLicenes.js"></script>
+<script>
+    makeCardPages()
+</script>
