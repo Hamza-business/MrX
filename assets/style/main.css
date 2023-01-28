@@ -169,7 +169,7 @@ footer img {
     background-size: cover;
     background-position: center center;
     padding: 0rem 0px 8rem;
-    box-shadow: rgba(255, 255, 255, 0.19) 0px 0px 0px 1000px inset;
+    box-shadow: rgba(15, 3, 3, 0.9) 0px 0px 0px 1000px inset;
     margin-top: 50px;
 }
 .Home_hero video{
@@ -195,7 +195,7 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-shadow: rgba(255, 255, 255, 0.19) 0px 0px 0px 1000px inset;
+    box-shadow: rgba(15, 3, 3, 0.9) 0px 0px 0px 1000px inset;
 }
 .features .gridSys.c2 {
     display: grid;
@@ -234,7 +234,7 @@ video {
 .features .gridSys{
     display: grid;
     grid-template-columns: var(--main-grid);
-    grid-gap: 20px;
+    grid-gap: 16px;
     margin-top: 40px;
 }
 .features .gridSys.c6{
@@ -291,6 +291,11 @@ video {
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
+    /* temp */
+    box-shadow: rgba(19, 4, 4, 0.65) 0px 0px 0px 1000px inset;
+}
+.logocont p{
+    color: rgb(231, 231, 231) !important
 }
 .twoTeachers {
     margin-top: 0;
@@ -391,6 +396,7 @@ video {
     margin-bottom: 2rem !important;
     margin-top: 4rem !important;
     border-bottom: 2px solid var(--main-color);
+    box-shadow: rgba(15, 3, 3, 0.9) 0px 0px 0px 1000px inset;
 }
 .nomarg{
     margin-top: 20px;
@@ -741,16 +747,19 @@ video {
     background-color: #fff !important;
     border: 2px solid var(--main-color) !important;
     color: var(--main-color) !important;
+    box-shadow: rgb(255, 237, 237) 0px 0px 0px 1000px inset;
 }
 .notification.notifications.noti2 {
     background-color: #fff !important;
     border: 2px solid rgb(248, 170, 0) !important;
     color: rgb(248, 170, 0) !important;
+    box-shadow: rgb(255, 252, 228) 0px 0px 0px 1000px inset;
 }
 .notification.notifications.noti3 {
     background-color: #fff !important;
     border: 2px solid var(--green-color) !important;
     color: var(--green-color) !important;
+    box-shadow: rgb(233, 255, 246) 0px 0px 0px 1000px inset;
 }
 
 
@@ -933,7 +942,7 @@ video {
     border-width: 2px;
 }
 .button:hover{
-    background-color: #ff2b2b80 !important;
+    background-color: #ff2b2b8a !important;
     border-color: var(--main-color) !important;
 }
 .time{

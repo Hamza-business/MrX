@@ -15,7 +15,7 @@ document.body.querySelector(".navbar").innerHTML +=`
     <div class="navbar-start">
         <a class="navbar-item" href="/"><i class="fas fa-home"></i> الرئيسية</a>
         
-        <a class="navbar-item" href="/lect"><i class="fas fa-tv"></i> المحاضرات</a>
+        <a class="navbar-item" href="/lectures.html"><i class="fas fa-tv"></i> المحاضرات</a>
     </div>
 
     <div class="navbar-end">
@@ -23,7 +23,7 @@ document.body.querySelector(".navbar").innerHTML +=`
             <a class="navbar-item" href="/account"><i class="fas fa-user-circle"></i> حسابي</a>
             <div class="buttons">
                 <a class="button is-red is-outlined" href="/login">تسجيل دخول</a>
-                <a class="button is-primary is-outlined" href="/login/#reg" onclick="formShow()">حساب جديد</a>
+                <a class="button is-primary is-outlined" href="/register">حساب جديد</a>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@ try{
                 </div>
                 <div class="is-flex">
                     <a class="social1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="social1" href="https://www.youtube.com/channel/UCwosrv5OsO8ex3wHlpuh76Q/about"><i class="fab fa-youtube"></i></a>
+                    <a class="social1" href=""><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             
@@ -57,7 +57,7 @@ try{
                     <div class="is-flex is-justify-content-space-between">    
                         <li><a href="/privacyPolicy/">سياسة الخصوصية</a></li>
                         <li><a href="/terms/">الشروط والاحكام</a></li>
-                        <li><a href="/login/#reg" onclick="formShow()">إنشاء حساب</a></li>
+                        <li><a href="/register">إنشاء حساب</a></li>
                         <li><a href="/login/">تسجيل الدخول</a></li>
                     </div>
                     <hr>
