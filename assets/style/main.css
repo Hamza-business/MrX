@@ -277,6 +277,11 @@ video {
     background-size: cover;
     padding: 50px 20px;
 }
+.hero-body > div:nth-child(1) .about{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    padding: 50px 20px;
+}
 .hero .about{
     border-radius: 20px;
     border: 2px solid var(--main-color);
@@ -340,7 +345,7 @@ video {
 }
 .about .proimge{
     background-color: #ff4b4b;
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
 }
 .nabout .proimge{
     margin-top: 0px;
