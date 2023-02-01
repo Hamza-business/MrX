@@ -313,11 +313,11 @@ video {
     padding: 0;
 }
 .logocont {
-    padding: 50px 20px;
-    background-image: url("/assets/images/logo3.png");
+    padding: 30px 20px 40px;
+    /* background-image: url("/assets/images/logo3.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
 }
 .twoTeachers {
     margin-top: 0;
